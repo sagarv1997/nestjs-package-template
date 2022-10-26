@@ -1,0 +1,41 @@
+{
+  "name": "@sagarv1997/nestjs-package-template",
+  "version": "1.0.0",
+  "description": "NestJS npm package template",
+  "main": "dist/index.js",
+  "keywords": [
+    "nestjs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sagarv1997/nestjs-package-template"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "nest build",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "start:debug": "nest start --debug --watch",
+    "start:prod": "node dist/main",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "test:e2e": "jest --config ./test/jest-e2e.json"
+  },
+  "author": "Sagar Vaghela <sagarv1997@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@nestjs/common": "^9.1.6",
+    "@types/node": "^18.11.6",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^3.0.2",
+    "rxjs": "^7.5.7",
+    "typescript": "^4.8.4"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^8.0.0"
+  }
+}
