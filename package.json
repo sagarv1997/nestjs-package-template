@@ -28,7 +28,10 @@
   "author": "Sagar Vaghela <sagarv1997@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@nestjs/common": "^9.1.6",
+    "@nestjs/common": "^9.1.6"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^9.0.0",
     "@types/node": "^18.11.6",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
