@@ -71,6 +71,14 @@ npm install ../nestjs-package-template
 
 Use any of the functions from the package in your test-app. Don't forget to import the Module and Service in the main app module.
 
+## Note
+
+### @nestjs/\* not in dependencies ⚠️
+
+While developing any package or library, there might be cases where you would require functionality from @nestjs/\* like @nestjs/common, during such cases, instead of adding the package in dependencies, add them in peerDependencies.
+
+Add them in dependencies might lead to some unexpected behaviour in the root project.
+
 ## Reads
 
 1. [Dynamic Module - NestJS Community](https://docs.nestjs.com/fundamentals/dynamic-modules)
